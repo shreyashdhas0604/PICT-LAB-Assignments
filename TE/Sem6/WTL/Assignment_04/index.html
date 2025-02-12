@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign up form validation</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+          <h2>CREATE ACCOUNT</h2>
+      </div>
+      <form class="form" id="form">
+          <div class="form-control">
+              <label for="username">Username</label>
+              <input type="text" placeholder="beautyndbeast" id="username">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+          </div>
+          <div class="form-control">
+              <label for="email">Email</label>
+              <input type="email" placeholder="dead@gmail.com" id="email">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+          </div>
+          <div class="form-control">
+              <label for="password">Password</label>
+              <input type="password" placeholder="password" id="password">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+          </div>
+          <div class="form-control">
+              <label for="confirm">Confirm Password</label>
+              <input type="password" placeholder="password" id="confirm">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+          </div>
+          <button type="submit">Submit</button>
+      </form>
+    </div>
+    <!-- JavaScript at the end to ensure DOM is fully loaded -->
+    <script src="script.js"></script>
+  </body>
+</html>
